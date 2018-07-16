@@ -43,5 +43,5 @@ for val in range(0, len(data_test)):
 
 accuracy = correct / len(data_test)
 
-print(f"The accuracy is {accuracy * 100}")
+print(f"The accuracy is {accuracy * 100}%")
 
