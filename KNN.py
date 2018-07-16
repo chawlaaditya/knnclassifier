@@ -36,7 +36,6 @@ correct = 0
 
 for val in range(0, len(data_test)):
     if train(data_test[val]) == "Match":
-        print("Match")
         correct += 1
     else:
         print("Not match")
