@@ -1,4 +1,4 @@
-# knnclassifier
+# Breast cancer predictor using K-nearest neighbour classifier
 A K-nearest neighbour classifier in Python from scratch.
 
 From the Wisconsin breast cancer data, I created a K-nearest neighbour classifier in Python, resulting in an ~97% accuracy.
