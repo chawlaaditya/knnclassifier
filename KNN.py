@@ -8,17 +8,14 @@ with open('cancerdata.csv') as csvfile:
     for row in data:
         cancer_data.append(row)
 
-
 data_train = cancer_data[0:450]
 data_test = cancer_data[451:len(cancer_data)]
-
 
 def calc_dist(test, train):
     dist = 0
     for i in range(1, len(test)-1):
         dist += math.sqrt((int(test[i]) - int(train[i])) ** 2)
     return(dist)
-
 
 def train(test_data):
     correct = 0
@@ -31,7 +28,7 @@ def train(test_data):
         return("Match")
     else:
         return("Not match")
-
+    
 correct = 0
 
 for val in range(0, len(data_test)):
@@ -43,4 +40,3 @@ for val in range(0, len(data_test)):
 accuracy = correct / len(data_test)
 
 print(f"The accuracy is {accuracy * 100}%")
-
